@@ -8,6 +8,7 @@ use App\Http\Livewire\Auth\Passwords\Email;
 use App\Http\Livewire\Auth\Passwords\Reset;
 use App\Http\Livewire\Auth\Register;
 use App\Http\Livewire\Auth\Verify;
+use App\Http\Livewire\CalculateTax;
 use App\Http\Livewire\ManageTax;
 use Illuminate\Support\Facades\Route;
 
@@ -23,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get("/taxes", ManageTax::class)->name("taxes");
+Route::get("/products", CalculateTax::class)->name("products");
 
 Route::view('/', 'welcome')->name('home');
 

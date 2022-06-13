@@ -20,7 +20,7 @@ class ProductSeeder extends Seeder
         for ($i = 0; $i < 16; $i++) {
             Product::create(
                 [
-                    "name" => $faker->randomElement(["country", "state", "city"]),
+                    "name" => "Product$i",
                     "price" => $faker->randomFloat(2, 100, 10000)
                 ]
             );
