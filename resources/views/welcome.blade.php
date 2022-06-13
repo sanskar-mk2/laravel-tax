@@ -47,7 +47,7 @@
                     @auth
                         <ul class="list-reset">
                             <li class="inline px-4">
-                                <a href="https://tailwindcss.com"
+                                <a href="{{ route('products') }}"
                                     class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">Products</a>
                             </li>
                             @if(Auth::user()->is_admin())
